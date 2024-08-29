@@ -1,0 +1,10 @@
+name: Infra
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:    
+      - name: Run an Oracle Cloud Infrastructure (OCI) CLI command
+        uses: oracle-actions/run-oci-cli-command@v1.3.1
+            
